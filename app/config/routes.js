@@ -8,9 +8,13 @@ var Main = require( "../components/main.js");
 var Home = require( "../components/home.js");
 
 var routes = (
-	<Router>
+	<Router history={hashHistory}>
 		<Route path="/" component={Main}>
-			<Route path="/home" component={Home} />
+			<IndexRoute component={Home} />
+			{/*<Route path='playerOne' header="player one" component={PromptContainer} />
+			<Route path='playerTwo/:playerOne' header="player two" component={PromptContainer}/>
+			<Route path='battle' component={ConfirmBattleContainer}/>
+			<Route path='results' component={ResultsContainer}/>*/}
 		</Route>
 	</Router>
 )

@@ -3,7 +3,7 @@ import React from "react";
 var Main = React.createClass({
 	render : function(){
 		return (
-			<div>
+			<div className="main-container">
 				<h1>main</h1>
 				{this.props.children}
 			</div>
